@@ -3,7 +3,7 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  background-color: #5aa388;
+  background-color: #028788;
   color: #fff;
   padding: 20px 250px;
   font-size: 20px;
@@ -23,6 +23,7 @@
 
 .logo_span {
   color: green;
+  margin-left: 0.5rem;
 }
 
 .nav_price {

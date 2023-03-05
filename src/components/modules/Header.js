@@ -4,13 +4,11 @@ const Header = () => {
   return (
     <nav className="navbar">
       <Link href="/">
-        <a>
-          <div className="logo">
-            <p>
-              PLANTS WORLD <span className="logo_span">☘️</span>
-            </p>
-          </div>
-        </a>
+        <div className="logo">
+          <p>
+            PLANTS WORLD <span className="logo_span">{"  "}☘️</span>
+          </p>
+        </div>
       </Link>
       <div className="nav_price">
         <span>🛒</span>

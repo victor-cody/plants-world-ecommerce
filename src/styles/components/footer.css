@@ -1,6 +1,7 @@
 .footer {
-	width: 100%;
-	color: #45876d;
-	text-align: center;
-	padding: 20px;
+  width: 100%;
+  color: hsl(156, 40%, 35%);
+  text-align: center;
+  padding: 25px;
+  margin-top: 1rem;
 }
