@@ -1,12 +1,12 @@
 import { storyblokEditable } from "@storyblok/react";
-import Image from "next/image";
+// import Image from "next/image";
 
 const Plant = ({ blok }) => {
   const resizedImage = function (imageUrl) {
     if (typeof imageUrl !== "undefined") {
       return imageUrl.filename.replace(
         "//a.storyblok.com",
-        "//img2.storyblok.com/300x250"
+        "//img2.storyblok.com/400x650"
       );
     }
     return null;
@@ -19,7 +19,7 @@ const Plant = ({ blok }) => {
       key={blok._uid}
     >
       <div className="left__section">
-        <Image src={blok.image.filename} className="left_img" alt="" />
+        <img src={resizedImage(blok.image)} className="left_img" alt="" />
       </div>
       <div className="right__section}">
         <h3 className="title">{blok.name}</h3>
