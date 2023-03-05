@@ -1,11 +1,17 @@
 import "@/styles/globals.css";
 
 import { storyblokInit, apiPlugin } from "@storyblok/react";
-import { Teaser, Page, Plant, FeaturedPlants } from "../components/";
+import {
+  Teaser,
+  HomePage,
+  Plant,
+  FeaturedPlants,
+  Layout,
+} from "../components/";
 
 const components = {
   teaser: Teaser,
-  page: Page,
+  page: HomePage,
   plant: Plant,
   featured_plants: FeaturedPlants,
 };
@@ -17,5 +23,9 @@ storyblokInit({
 });
 
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  );
 }

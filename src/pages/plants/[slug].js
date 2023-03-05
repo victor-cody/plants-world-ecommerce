@@ -12,7 +12,7 @@ export default function Page({ story }) {
   return (
     <div>
       <Head>
-        <title>{story ? story.name : "My Site"}</title>
+        <title>{`Plants World | ${story.name}`}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

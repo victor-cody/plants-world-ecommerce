@@ -14,7 +14,7 @@ export default function Home({ story }) {
   return (
     <>
       <Head>
-        <title>Plants | Home</title>
+        <title>Plants World | Home</title>
       </Head>
       <div className="container">
         <StoryblokComponent blok={story.content} />
