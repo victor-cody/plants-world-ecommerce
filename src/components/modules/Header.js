@@ -10,9 +10,9 @@ const Header = () => {
           </p>
         </div>
       </Link>
-      <div className="nav_price">
+      <div className="nav_price snipcart-checkout">
         <span>🛒</span>
-        <p>$0.00</p>
+        <p className="snipcart-total-price">$0.00</p>
       </div>
     </nav>
   );
