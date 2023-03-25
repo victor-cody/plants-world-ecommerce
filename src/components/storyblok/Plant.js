@@ -14,24 +14,24 @@ const Plant = ({ blok }) => {
 
   return (
     <div
-      className={styles.single_container}
+      className="single__container"
       {...storyblokEditable(blok)}
       key={blok._uid}
     >
-      <div className={styles.left_section}>
-        <Image src={blok.image.filename} className={styles.left_img} alt="" />
+      <div className="left__section">
+        <Image src={blok.image.filename} className="left_img" alt="" />
       </div>
-      <div className={styles.right_section}>
-        <h3 className={styles.title}>{blok.name}</h3>
-        <p className={styles.price}>${blok.price}</p>
+      <div className="right__section}">
+        <h3 className="title">{blok.name}</h3>
+        <p className="price">${blok.price}</p>
         <div
-          className={styles.para}
+          className="para"
           dangerouslySetInnerHTML={{
             __html: blok.description,
           }}
         ></div>
         <button
-          className="btn snipcart-add-item"
+          className="btn snipcart--add-item"
           data-item-id={blok.id}
           data-item-price={blok.price}
           data-item-url={`bloks/${blok.slug}`}

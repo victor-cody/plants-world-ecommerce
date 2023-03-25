@@ -1,16 +1,15 @@
+import Link from "next/link";
 import React from "react";
 
 const PlantCard = ({ plant }) => {
   return (
-    <div className={styles.plant_card} key={plant._uid}>
+    <div className="plant__card" key={plant._uid}>
       <Link href={`plants/${plant.slug}`}>
-        <a>
-          <div className={styles.product_img}>
-            <img src={plant.image.filename} alt={plant.name} />
-          </div>
-        </a>
+        <div className="product__img">
+          <img src={plant.image.filename} alt={plant.name} />
+        </div>
       </Link>
-      <div className={styles.plant_content}>
+      <div className="plant__content">
         <h3>{plant.name}</h3>
         <p>${plant.price}</p>
         <button

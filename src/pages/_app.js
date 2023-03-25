@@ -1,5 +1,4 @@
 import "@/styles/globals.css";
-import "@styles/Home.module.css";
 
 import { storyblokInit, apiPlugin } from "@storyblok/react";
 import { Teaser, Page, Plant, FeaturedPlants } from "../components/";
