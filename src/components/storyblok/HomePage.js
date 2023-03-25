@@ -1,11 +1,11 @@
 import { storyblokEditable, StoryblokComponent } from "@storyblok/react";
 
-const Page = ({ blok }) => (
-  <div {...storyblokEditable(blok)}>
+const HomePage = ({ blok }) => (
+  <main {...storyblokEditable(blok)}>
     {blok.body.map((nestedBlok) => (
       <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
     ))}
-  </div>
+  </main>
 );
 
-export default Page;
+export default HomePage;

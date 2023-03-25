@@ -13,7 +13,7 @@ const Plant = ({ blok }) => {
   };
 
   return (
-    <div
+    <main
       className="single__container"
       {...storyblokEditable(blok)}
       key={blok._uid}
@@ -41,7 +41,7 @@ const Plant = ({ blok }) => {
           Add to cart 🛒
         </button>
       </div>
-    </div>
+    </main>
   );
 };
 

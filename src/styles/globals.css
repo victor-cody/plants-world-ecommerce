@@ -44,20 +44,24 @@ img:hover {
 }
 
 .btn {
-  background-color: #5aa388;
+  /* background-color: #5aa388; */
+  background-color: #028788;
   color: #fff;
   display: inline-block;
   padding: 15px 20px;
   margin: 5px 0;
   border-radius: 3px;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.6s ease-in-out;
   border: none;
 }
 
 .btn:hover {
-  background-color: #45876d;
+  /* background-color: #45876d; */
+  background-color: hsl(180, 97%, 23%);
 }
 
 @import "homepage.css";
 @import "./components/plant_page.css";
+@import "./components/footer.css";
+@import "./components/header.css";

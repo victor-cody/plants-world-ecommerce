@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #028788;
+  color: #fff;
+  padding: 20px 250px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    padding: 20px 50px;
+  }
+}
+
+.logo,
+.nav_price {
+  cursor: pointer;
+}
+
+.logo_span {
+  color: green;
+  margin-left: 0.5rem;
+}
+
+.nav_price {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
