@@ -31,11 +31,11 @@ const Plant = ({ blok }) => {
           }}
         ></div>
         <button
-          className="btn snipcart--add-item"
-          data-item-id={blok.id}
+          className="btn snipcart-add-item"
+          data-item-id={blok._uid}
           data-item-price={blok.price}
           data-item-url={`bloks/${blok.slug}`}
-          data-item-image={blok.image.url}
+          data-item-image={blok.image.filename}
           data-item-name={blok.name}
         >
           Add to cart 🛒
