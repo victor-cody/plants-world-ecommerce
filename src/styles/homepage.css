@@ -1,0 +1,36 @@
+.title {
+	margin: 50px 0;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.plants__container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+}
+
+@media (max-width: 500px) {
+	.plants__container {
+		grid-template-columns: 1fr;
+	}
+}
+
+.plant__card {
+	padding: 20px;
+}
+
+.plant__img {
+	background-color: #fff;
+	height: 300px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.plant__content h3 {
+	margin: 5px 0;
+}
